@@ -77,16 +77,31 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    // Text Section
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Batu adalah sebuah kota di Jawa Timur yang terkenal dengan '
+        'udara sejuk dan destinasi wisatanya. Kota ini sering disebut '
+        'sebagai "Kota Wisata" karena memiliki banyak tempat menarik '
+        'seperti Jatim Park, Museum Angkut, dan Selecta. '
+        'Dengan suasana pegunungan yang asri, Batu menjadi salah satu '
+        'tujuan favorit wisatawan lokal maupun mancanegara.',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Nama dan NIM Anda',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Muhammad Mahdi Arielreza Hafiz - 2341760049'),
         ),
-        body: Column(
+        body: ListView(
           children: [
             titleSection,
-            buttonSection, // panggil di body setelah title
+            buttonSection,
+            textSection,
           ],
         ),
       ),

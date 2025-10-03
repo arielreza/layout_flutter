@@ -1,61 +1,47 @@
-# Flutter Layout & Navigasi - Jobsheet 06
-
-Project ini merupakan implementasi dari **Jobsheet 06: Layout dan Navigasi** pada mata kuliah Pemrograman Mobile.  
-Aplikasi ini menampilkan contoh layout sederhana mulai dari **title section**, **button row**, hingga **text section**.
+# Flutter Layout – Praktikum 3
 
 ## Identitas
-- Nama  : Muhammad Mahdi Arielreza Hafiz  
-- NIM   : 2341760049  
-- Kelas : SIB-3D  
+- **Nama**: Muhammad Mahdi Arielreza Hafiz  
+- **NIM**: 2341760049  
 
 ---
 
-## Deskripsi Per Bagian
-
-### 1. Title Section
-- Judul (`Batu`)
-- Subjudul (`Malang, Indonesia`) dengan warna abu-abu
-- Ikon bintang berwarna merah
-- Angka `41` di sisi kanan  
-
-📸 **Hasil Tampilan:**  
-![Screenshot Title Section](images/title_section.png)
+## Deskripsi
+Proyek ini merupakan hasil implementasi **Jobsheet Flutter Praktikum 3 – Layout dan Navigasi**.  
+Tujuan dari praktikum ini adalah membuat layout Flutter dengan **Title Section, Button Row, dan Text Section** menggunakan widget dasar Flutter.
 
 ---
 
-### 2. Button Row
-- Tiga tombol dengan ikon dan teks di bawah title section:
-  - 📞 **CALL**
-  - 📍 **ROUTE**
-  - 🔗 **SHARE**  
+## Struktur Layout
+1. **Title Section**
+   - Menampilkan judul tempat (`Batu`) dan lokasi (`Malang, Indonesia`).
+   - Ikon bintang berwarna merah dengan jumlah rating (`41`).
 
-📸 **Hasil Tampilan:**  
-![Screenshot Button Row](images/button_row.png)
+   ![Screenshot Title Section](screenshots/title_section.png)
+
+2. **Button Row**
+   - Menampilkan 3 tombol: **Call, Route, Share**.
+   - Dibuat menggunakan fungsi helper `_buildButtonColumn`.
+
+   ![Screenshot Button Row](screenshots/button_section.png)
+
+3. **Text Section**
+   - Menampilkan paragraf deskripsi tentang Kota Batu.
+   - Menggunakan `softWrap: true` agar teks membungkus otomatis.
+
+   ![Screenshot Text Section](screenshots/text_section.png)
 
 ---
 
-### 3. Text Section (Coming Soon)
-- Bagian deskripsi panjang di bawah button row  
+## Tampilan Akhir
+Gabungan dari semua section ditampilkan dalam `ListView` agar layout dapat di-scroll bila konten panjang.
 
-📸 **Hasil Tampilan:**  
-![Screenshot Text Section](images/text_section.png)
-
----
-
-## Struktur Kode
-- `main.dart`  
-  - `MyApp` → widget utama aplikasi  
-  - `titleSection` → widget judul, subjudul, ikon bintang, angka  
-  - `_buildButtonColumn()` → fungsi tombol (ikon + teks)  
-  - `buttonSection` → widget yang berisi 3 tombol dalam Row  
-  - `textSection` → (akan ditambahkan nanti)  
+![Screenshot Full Layout](screenshots/full_layout.png)
 
 ---
 
 ## Cara Menjalankan
-1. Clone atau unduh project ini.  
-2. Pastikan sudah menginstal [Flutter SDK](https://docs.flutter.dev/get-started/install).  
-3. Jalankan perintah berikut di terminal:
+1. Clone repository ini.
+2. Jalankan perintah:
    ```bash
-   flutter pub get
    flutter run
