@@ -17,25 +17,25 @@ Tujuan dari praktikum ini adalah membuat layout Flutter dengan **Image Section, 
    - Menampilkan gambar header dari file lokal `assets/batu.jpg`.
    - Menggunakan `Image.asset` dengan properti `fit: BoxFit.cover`.
 
-   ![Screenshot Image Section](screenshots/image_section.png)
+   ![Screenshot Image Section](assets/ss4%20image.png)
 
 2. **Title Section**
    - Menampilkan judul tempat (`Batu`) dan lokasi (`Malang, Indonesia`).
    - Ikon bintang berwarna merah dengan jumlah rating (`41`).
 
-   ![Screenshot Title Section](screenshots/title_section.png)
+   ![Screenshot Title Section](assets/ss1%20layout.png)
 
 3. **Button Row**
    - Menampilkan 3 tombol: **Call, Route, Share**.
    - Dibuat menggunakan fungsi helper `_buildButtonColumn`.
 
-   ![Screenshot Button Row](screenshots/button_section.png)
+   ![Screenshot Button Row](assets/ss2%20button%20row.png)
 
 4. **Text Section**
    - Menampilkan paragraf deskripsi tentang Kota Batu.
    - Menggunakan `softWrap: true` agar teks membungkus otomatis.
 
-   ![Screenshot Text Section](screenshots/text_section.png)
+   ![Screenshot Text Section](assets/ss3%20text%20section.png)
 
 ---
 
