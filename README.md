@@ -42,7 +42,7 @@ Tujuan dari praktikum ini adalah membuat layout Flutter dengan **Image Section, 
 ## Tampilan Akhir
 Gabungan dari semua section ditampilkan dalam `ListView` agar layout dapat di-scroll bila konten panjang.
 
-![Screenshot Full Layout](screenshots/full_layout.png)
+![Screenshot Full Layout](assets/ss4%20image.png)
 
 ---
 
