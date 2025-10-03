@@ -31,6 +31,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     Color color = Theme.of(context).primaryColor;
 
+    // 🔹 Image Section
+Widget imageSection = Image.asset(
+  'assets/batu.jpg',
+  width: 600,
+  height: 240,
+  fit: BoxFit.cover,
+);
+
     // Title Section
     Widget titleSection = Container(
       padding: const EdgeInsets.all(32),
@@ -99,6 +107,7 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           children: [
+            imageSection,   // 🔹 Tambahkan di paling atas
             titleSection,
             buttonSection,
             textSection,
